@@ -1,0 +1,185 @@
+<DOCTYPE! html>
+  <html>
+    <link rel="stylesheet" href="join.css">
+    <title>FORM-PAGE</title>
+    
+    
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="homer.html">HOME</a></li>
+                        <li><a href="goal.html">OUR GOALS</a></li>
+                        <li><a href="donations.html">DONATIONS</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="container">
+        <header class="header">
+          <h1 id="title" class="text-center"><b>REGISTERATION FORM</b></h1>
+          <p id="description" class="description text-center">
+            Fill the form carefully, as you would not be able to make any corrections after submission.
+          </p>
+        </header>
+        <form id="recruitment-form">
+          <div class="form-group">
+            <label id="name-label" for="name">Names<span class="clue"></span>(last name first)</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label id="number-label" for="number"
+              >Age</label>
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="10"
+              max="99"
+              class="form-control"
+              placeholder="Age"
+            />
+          </div>
+          <div class="form-group">
+            <p>Which option best describes your current occupation?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+              <option disabled selected value>Select current occupation</option>
+              <option value="student">Student</option>
+              <option value="job">Full Time Job</option>
+              <option value="learner">Part Time Job</option>
+              <option value="Self">Self Employed</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>How did you hear about us?</p>
+            <label>
+              <input
+                name="user-recommend"
+                value="word-of-mouth"
+                type="radio"
+                class="input-radio"
+                checked
+              />Word of mouth</label
+            >
+            <label>
+              <input
+                name="user-recommend"
+                value="advertisements"
+                type="radio"
+                class="input-radio"
+              />Commercials</label
+            >
+      
+            <label
+              ><input
+                name="user-recommend"
+                value="the-internet"
+                type="radio"
+                class="input-radio"
+              />Social Media</label
+            >
+          </div>
+      
+          <div class="form-group">
+            <p>
+              What is your academic qualification?
+            </p>
+            <select id="most-like" name="mostLike" class="form-control" required>
+              <option disabled selected value>Select an option</option>
+              <option value="sanguine">High Shool degree</option>
+              <option value="choleric">Bachelor's degree</option>
+              <option value="melancholic">Master's degree</option>
+              <option value="phlegmatic">Doctorate degree</option>
+            </select>
+          </div>
+      
+          <div class="form-group">
+            <p>
+              What goal(s) are you applying for?
+              <span class="clue">(Check all that apply)</span>
+            </p>
+      
+            <label
+              ><input
+                name="prefer"
+                value="administrative"
+                type="checkbox"
+                class="input-checkbox"
+              />NO POVERTY</label
+            >
+            <label>
+              <input
+                name="prefer"
+                value="customer-service"
+                type="checkbox"
+                class="input-checkbox"
+              />END HUNGER</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="finance"
+                type="checkbox"
+                class="input-checkbox"
+              />FREE EDUCATION</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="information-technology"
+                type="checkbox"
+                class="input-checkbox"
+              />RENEWABLE ENERGY</label
+            >
+            <label
+              ><input
+                name="prefer"
+                value="leadership"
+                type="checkbox"
+                class="input-checkbox"
+              />GENDER EQUALITY</label
+            >
+      <br>
+          <div class="form-group">
+            <p>Any disabilities??</p>
+            <textarea
+              id="comments"
+              class="input-textarea"
+              name="comment"
+              placeholder="Enter text here..."
+            ></textarea>
+          </div>
+      
+          <a href="end.html"><div class="form-group">
+          <button type="submit" id="submit" class="submit-button" >
+              <a href="end.html">Submit</a>
+            </button>
+          </div></a>
+        </form>
+      </div>
+      </html>
